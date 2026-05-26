@@ -38,6 +38,7 @@ parts:
               - file: advanced/lab-knowledge-best-practices
           - file: advanced/advanced-topic-trigger-and-yaml-editing
           - file: advanced/odata-query-in-copilot-studio
+          - file: advanced/calling-external-api-from-topic
           - file: advanced/handle-images-and-pdf-with-agents
           - file: advanced/build-email-agent-with-templates
           - file: advanced/generate-json-and-documents-with-prompt-tool

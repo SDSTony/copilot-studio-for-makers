@@ -51,6 +51,8 @@ Agent Design Framework는 에이전트의 목적, 트리거, 도구, 채널, 거
 :align: center
 ```
 
+<p style="text-align: center; font-size: 0.85em; color: #666;">출처: <a href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-design-canvas-framework" target="_blank">Agent Design Canvas Framework - Microsoft Learn</a></p>
+
 ---
 
 ## 구성 요소 및 작성 방법
