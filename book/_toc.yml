@@ -1,0 +1,47 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: 기본 과정
+    chapters:
+      - file: basic/copilot-studio-and-power-platform-fundamentals
+        sections:
+          - file: basic/copilot-studio-overview
+          - file: basic/power-platform-key-concepts
+      - file: basic/build-agents-fast-with-ai
+        sections:
+          - file: basic/build-qa-agent-with-instructions-and-knowledge
+          - file: basic/build-agent-with-tools-for-m365
+      - file: basic/build-agents-with-precise-control
+        sections:
+          - file: basic/design-conversation-flow-with-topics
+          - file: basic/design-workflow-with-agent-flow
+      - file: basic/agent-deployment-and-sharing
+        sections:
+          - file: basic/publish-agent-to-m365-and-teams
+          - file: basic/share-agent-with-team
+
+  - caption: 심화 과정
+    chapters:
+      - file: advanced/advanced-course-disclaimer
+      - file: advanced/plan-overview
+        sections:
+          - file: advanced/define-project-goals-and-kpis
+          - file: advanced/agent-design-framework
+      - file: advanced/implement-overview
+        sections:
+          - file: advanced/best-practices-instructions-and-knowledge
+            sections:
+              - file: advanced/lab-instructions-best-practices
+              - file: advanced/lab-knowledge-best-practices
+          - file: advanced/advanced-topic-trigger-and-yaml-editing
+          - file: advanced/odata-query-in-copilot-studio
+          - file: advanced/handle-images-and-pdf-with-agents
+          - file: advanced/build-email-agent-with-templates
+          - file: advanced/generate-json-and-documents-with-prompt-tool
+          - file: advanced/build-human-in-the-loop-process
+          - file: advanced/agent-flow-best-practices
+          - file: advanced/teams-channel-deployment-best-practices
+          
