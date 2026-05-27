@@ -1,36 +1,34 @@
 # Teams 채널 배포 시 모범 사례
 
-## 개요
+## Teams 배포는 왜 다른가?
 
-> Copilot Studio 에이전트를 Microsoft Teams 채널에 배포할 때 알아야 할 모범 사례와 자주 묻는 질문들을 정리합니다.
+Copilot Studio 에이전트를 M365 Copilot에 배포할 때와 Microsoft Teams에 배포할 때는 **동작 방식이 근본적으로 다릅니다.** Teams 환경의 특성을 이해하지 못하면 예상치 못한 오류와 혼란스러운 사용자 경험이 발생할 수 있습니다.
 
-## Teams 배포 방식 소개
+### Teams가 다른 핵심 이유
 
-### Teams 앱으로 배포하기
-### 공유 방법: 조직 내 배포 vs 특정 사용자 공유
+| 항목 | M365 Copilot | Teams |
+|---|---|---|
+| 대화 지속성 | 세션이 끝나면 초기화 | 대화가 **영구적으로 유지**됨 (며칠, 몇 주도 지속) |
+| 대화 시작 이벤트 | 접속할 때마다 발생 | **처음 설치할 때 단 한 번만 발생** |
+| 업데이트 반영 | 즉시 반영 | 캐시로 인해 **최신 버전이 바로 적용되지 않을 수 있음** |
+| 컨텍스트 초기화 | 자동 초기화 | **수동으로 관리해야 함** |
 
-## 메시지 형식 관련 모범 사례
+**구체적으로 어떤 문제가 생기는가:**
 
-### Teams에서 지원되는 카드 및 메시지 형식
-### Adaptive Card 활용 예시
-### 예제 문구: 환영 메시지
-### 예제 문구: 도움말 메시지
-### 예제 문구: 오류 안내 메시지
+- **오래된 컨텍스트 문제**: Teams는 대화 기록을 자동으로 지우지 않습니다. 에이전트가 최근 10턴의 대화를 참고하는데, 이전 대화가 쌓이면 LLM이 혼란스러운 답변을 내놓을 수 있습니다.
+- **토큰 만료**: 커넥터 인증(로그인 토큰)이 오랜 세션 중에 만료되어 커넥터 호출이 실패할 수 있습니다.
+- **업데이트 지연**: 에이전트를 새로 배포해도 사용자는 한동안 이전 버전과 대화하게 될 수 있습니다.
+- **ConversationStart의 함정**: Teams에서 "Conversation Start" 이벤트는 **앱을 처음 설치할 때 단 한 번만 발생**합니다. 앱을 삭제 후 재설치해도 다시 발생하지 않습니다.
 
-## 인증 및 사용자 컨텍스트
+```{important}
+Teams 배포 모범 사례 전반에 대한 상세한 내용은 아래 참고문헌의 Copilot Studio CAT 팀의 블로그 포스트를 참고하세요. 세션 관리, 버전 관리, 인증 처리, 테스트 전략 등 실무에서 바로 적용할 수 있는 체크리스트가 정리되어 있습니다.
+```
 
-### Teams SSO(Single Sign-On) 활용
-### 현재 로그인 사용자 정보 가져오기
-
-## 알림 및 채널 메시지 발송
-
-### 에이전트가 Teams 채널에 메시지 보내기
-### 프로액티브 메시지(Proactive Message) 소개
-
-## 자주 발생하는 문제 및 해결법
+---
 
 ## 참고문헌
 
-- [Copilot Studio Teams Deployment UX Best Practices](https://microsoft.github.io/mcscatblog/posts/copilot-studio-teams-deployment-ux/)
+- [Copilot Studio Teams Deployment UX Best Practices - Microsoft CAT Blog](https://microsoft.github.io/mcscatblog/posts/copilot-studio-teams-deployment-ux/)
+
 
 
