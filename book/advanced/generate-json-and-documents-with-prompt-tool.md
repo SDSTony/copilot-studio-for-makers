@@ -90,15 +90,11 @@ Your document is ready. [Download it here]({varDocumentURL})
 - 텍스트 서식(굵게, 색상, 제목 등) 지정 미지원
 - Word 문서(.docx) 형식만 지원
 
----
-
 ## 실습: JSON 및 문서 출력물 작성
 
 ### 실습 목표
 ### 실습 단계
 ### 실습 결과 확인
-
----
 
 ## 참고문헌
 
