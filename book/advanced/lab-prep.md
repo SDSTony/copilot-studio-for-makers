@@ -1,5 +1,11 @@
 # 실습 환경 세팅
 
+```{important}
+실습 시작 전, 아래 링크에서 실습 파일을 먼저 다운로드하세요.
+
+[📥 실습 파일 다운로드](https://github.com/SDSTony/copilot-studio-for-makers/raw/main/lab%20files/%EC%8B%A4%EC%8A%B5%ED%8C%8C%EC%9D%BC%EB%AA%A8%EC%9D%8C.zip)
+```
+
 ## 학습 목표
 
 - 실습 환경 세팅을 진행한다.
