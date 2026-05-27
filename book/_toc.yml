@@ -35,7 +35,6 @@ parts:
           - file: advanced/best-practices-instructions-and-knowledge
             sections:
               - file: advanced/lab-instructions-best-practices
-              - file: advanced/lab-knowledge-best-practices
           - file: advanced/advanced-topic-trigger-and-yaml-editing
           - file: advanced/odata-query-in-copilot-studio
           - file: advanced/calling-external-api-from-topic
