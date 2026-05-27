@@ -32,9 +32,8 @@ parts:
           - file: advanced/agent-design-framework
       - file: advanced/implement-overview
         sections:
+          - file: advanced/lab-prep
           - file: advanced/best-practices-instructions-and-knowledge
-            sections:
-              - file: advanced/lab-instructions-best-practices
           - file: advanced/advanced-topic-trigger-and-yaml-editing
           - file: advanced/odata-query-in-copilot-studio
           - file: advanced/calling-external-api-from-topic

@@ -53,7 +53,6 @@ beginDialog:
 **주요 활용 포인트:**
 
 - **응답 전처리**: AI가 생성한 답변을 그대로 내보내지 않고, 내용을 가공하거나 보강할 수 있습니다.
-- **인용 링크(Citation) 변경**: 기본 인용 링크를 조직 내부 URL로 교체하거나 포맷을 변경할 수 있습니다. (예: `CitationsSnip` 변수 활용)
 - **응답 전송 제어**: `System.ContinueResponse` 시스템 변수를 `false`로 설정하면 오케스트레이터가 자동으로 응답을 전송하지 않습니다. 이때 메이커가 직접 Message 노드로 커스텀 응답을 전송할 수 있습니다.
 
 | 핵심 변수 | 설명 |
@@ -101,4 +100,26 @@ beginDialog:
 - [Topics code editor - Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/topics-code-editor)
 - [Generative orchestration: Custom triggers - Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/generative-orchestration#custom-triggers-in-generative-orchestration)
 - [Custom knowledge sources - Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/custom-knowledge-sources)
+
+---
+
+## 실습: OnGeneratedResponse 활용
+
+### 지시사항
+
+1. Copilot Studio 에이전트를 하나 만든다.
+
+2. 지식에는 쉐어포인트에 제공된 지식을 참조시킨다.
+
+3. 토픽으로 이동하여 새 토픽을 만든다.
+
+4. 토픽 트리거 중 'AI가 생성한 응답이 곧 전송됩니다'을 선택한다.
+
+5. 아래와 같이 토픽을 구축한 뒤 테스트 한다.
+
+![](imgs/lab02-01-topic-setup.png)
+
+![](imgs/lab02-02-topic-test1.png)
+
+![](imgs/lab02-03-topic-test2.png)
 
