@@ -7,26 +7,32 @@ parts:
   - caption: 기본 과정
     chapters:
       - file: basic/common-guidelines
-      - file: basic/understanding-agents-and-m365-copilot-agent-builder
-        sections:
-          - file: basic/lab01-create-agent-with-m365-copilot-agent-builder
-      - file: basic/copilot-studio-and-power-platform-fundamentals
-        sections:
-          - file: basic/copilot-studio-overview
-          - file: basic/power-platform-key-concepts
-          - file: basic/lab02-prep-power-platform-environment-setup
-      - file: basic/build-agents-fast-with-ai
-        sections:
-          - file: basic/lab03-build-qa-agent-with-instructions-and-knowledge
-          - file: basic/lab04-build-agent-with-tools-for-m365
-      - file: basic/build-agents-with-precise-control
-        sections:
-          - file: basic/lab05-design-workflow-with-agent-flow
-          - file: basic/lab06-design-conversation-flow-with-topics
-      - file: basic/agent-deployment-and-sharing
-        sections:
-          - file: basic/publish-agent-to-m365-and-teams
-          - file: basic/share-agent-with-team
+      - file: basic/lab01-create-agent-with-m365-copilot-agent-builder
+      - file: basic/lab02-prep-power-platform-environment-setup
+      - file: basic/lab03-build-qa-agent-with-instructions-and-knowledge
+      - file: basic/lab04-build-agent-with-tools-for-m365
+      - file: basic/lab05-design-workflow-with-agent-flow
+      - file: basic/lab06-design-conversation-flow-with-topics
+      # - file: basic/understanding-agents-and-m365-copilot-agent-builder
+      #   sections:
+      #     - file: basic/lab01-create-agent-with-m365-copilot-agent-builder
+      # - file: basic/copilot-studio-and-power-platform-fundamentals
+      #   sections:
+      #     - file: basic/copilot-studio-overview
+      #     - file: basic/power-platform-key-concepts
+      #     - file: basic/lab02-prep-power-platform-environment-setup
+      # - file: basic/build-agents-fast-with-ai
+      #   sections:
+      #     - file: basic/lab03-build-qa-agent-with-instructions-and-knowledge
+      #     - file: basic/lab04-build-agent-with-tools-for-m365
+      # - file: basic/build-agents-with-precise-control
+      #   sections:
+      #     - file: basic/lab05-design-workflow-with-agent-flow
+      #     - file: basic/lab06-design-conversation-flow-with-topics
+      # - file: basic/agent-deployment-and-sharing
+      #   sections:
+      #     - file: basic/publish-agent-to-m365-and-teams
+      #     - file: basic/share-agent-with-team
 
   - caption: 심화 과정
     chapters:
