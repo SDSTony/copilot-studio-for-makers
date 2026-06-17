@@ -1,4 +1,4 @@
-# 실습 환경 준비: Power Platform 환경 및 솔루션 세팅
+# Lab 02 : Power Platform 환경 및 솔루션 세팅
 
 ## 학습 목표
 
