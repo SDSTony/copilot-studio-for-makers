@@ -8,7 +8,7 @@
 
 이번 교육에서는 **Copilot Studio New Experience** 화면이 뜨면, 우측 상단의 토글 버튼을 클릭하여 **Classic UI**로 변경한 후 진행합니다.
 
-![Classic UI 전환 토글](imgs/classic-ui-toggle.png)
+![Classic UI 전환 토글](imgs/classic-ui-toggle.jpg)
 
 **전환 사유:**
 
