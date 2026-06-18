@@ -48,7 +48,7 @@
 
 7. **입력** 섹션에서 **+ 입력 추가** 버튼을 클릭합니다. "입력 추가" 대화가 표시되면, 다음 입력 매개변수들을 검색한 뒤 클릭해서 추가합니다:
    
-   - **To**, **Subject Filter**, **Fetch Only Unread Messages**
+   - **Top**, **Subject Filter**, **Fetch Only Unread Messages**
 
    ![7. 입력 추가 대화](./imgs/new-quotation-agent/Slide7.JPG)
 
