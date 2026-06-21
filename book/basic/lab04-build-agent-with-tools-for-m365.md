@@ -106,10 +106,10 @@
 
     ![18. Destination File Path 수식 입력](./imgs/new-quotation-agent/Slide18.JPG)
 
-19. 아래 수식을 복사 붙여 넣는다. 수식 입력이 완료되면 초록색 체크 아이콘이 떠야 합니다. 그리고 삽입을 클릭합니다. 
+19. 아래 수식을 복사 붙여 넣는다. 수식 입력이 완료되면 초록색 체크 아이콘이 떠야 합니다. 그리고 삽입을 클릭합니다. 이 때, `/에이전트 교육 기본/` 부분은, 실습 환경 구축 시 개인마다 실습 파일 업로드한 폴더가 다르다면, 해당 폴더 경로로 변경하여 입력한다.
 ```
 Concatenate(
-    "/Accounts/CJ/Labs/Lab04/견적서/견적서_",
+    "/에이전트 교육 기본/Lab04/견적서/견적서_",
     Text(
         DateAdd( Now(), 0, TimeUnit.Hours),
         "yyyymmddHHmmss"

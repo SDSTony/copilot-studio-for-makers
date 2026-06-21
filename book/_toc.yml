@@ -11,7 +11,7 @@ parts:
       - file: basic/lab02-prep-power-platform-environment-setup
       - file: basic/lab03-build-qa-agent-with-instructions-and-knowledge
       - file: basic/lab04-build-agent-with-tools-for-m365
-      - file: basic/lab05-design-workflow-with-agent-flow
+      - file: basic/lab05-v2-design-workflow-with-agent-flow
       - file: basic/lab06-design-conversation-flow-with-topics
       # - file: basic/understanding-agents-and-m365-copilot-agent-builder
       #   sections:
