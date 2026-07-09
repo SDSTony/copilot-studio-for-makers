@@ -109,7 +109,7 @@
 
     ![15. File Path 및 Destination File Path 설정](./imgs/new-quotation-agent/Slide15.JPG)
 
-16. "Lab04" 폴더에서 "템플릿/견적서_템플릿_예제.xlsx" 파일을 선택합니다. 이 파일이 소스가 되어 복사될 파일입니다.
+16. "Lab04" 폴더에서 "템플릿/견적서_템플릿_엑셀.xlsx" 파일을 선택합니다. 이 파일이 소스가 되어 복사될 파일입니다.
 
     ![16. 소스 파일(견적서 템플릿) 선택](./imgs/new-quotation-agent/Slide16.JPG)
 
