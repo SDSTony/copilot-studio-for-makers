@@ -34,6 +34,10 @@
 
    ![3. 에이전트 흐름 선택](imgs/receipt-agent/Slide3.JPG)
 
+```{note}
+에이전트 흐름(Agent Flow)은 정해진 순서대로 작업을 수행하는 결정론적(deterministic) 워크플로입니다. Lab04처럼 도구를 나열해두고 AI 오케스트레이터가 실행 순서를 판단하는 방식과 달리, 흐름은 "파일 수신 → AI 분석 → OneDrive 저장"처럼 단계가 항상 동일한 순서로 실행되어 안정적이고 예측 가능한 자동화가 필요한 경우에 적합합니다.
+```
+
 4. 에이전트 흐름 디자이너 화면이 열립니다. 첫 번째 노드 **에이전트가 호출을 받을 때**에서 **"+ 입력 추가"** 버튼을 클릭합니다.
 
    ![4. 입력 추가 버튼 클릭](imgs/receipt-agent/Slide4.JPG)
@@ -140,10 +144,14 @@
    
    예를 들어, 다음과 유사한 식이 사용됩니다:
    ```
-   concat(outputs('프롬프트 실행')?['body/responsev2/predictionOutput/structuredOutput/filename'], '.', 'jpg')
+   concat(outputs('프롬프트_실행')?['body/responsev2/predictionOutput/structuredOutput/filename'], '.', 'jpg')
    ```
 
    ![21. 파일 이름을 동적 식으로 매핑](imgs/receipt-agent/Slide21.JPG)
+
+```{note}
+이 수식은 앞서 프롬프트 실행이 JSON으로 반환한 `filename` 값을 꺼내서(`.jpg` 확장자를 붙여) 파일 이름으로 사용하기 위한 것입니다. 14단계에서 출력을 JSON으로 고정해 둔 덕분에, 이처럼 정해진 경로(`.../structuredOutput/filename`)로 값을 안정적으로 참조할 수 있습니다.
+```
 
 22. **파일 내용** 필드에서 동적 내용 버튼 **번개 아이콘**을 클릭합니다. 입력 노드의 `file content contentBytes` 을 선택합니다. 
 
@@ -189,6 +197,10 @@
 32. **완료** 섹션에서 **실행 후** 설정을 **생성형 AI로 응답 작성**으로 설정합니다. 그리고 **"저장"** 버튼을 클릭합니다. 
 
    ![32. 에이전트 지침 수정](imgs/receipt-agent/Slide32.JPG)
+
+```{note}
+**실행 후**를 **생성형 AI로 응답 작성**으로 설정하면, 흐름이 끝난 뒤 그 결과를 바탕으로 에이전트가 사용자에게 자연스러운 문장으로 결과를 안내합니다. 고정된 메시지 대신 상황에 맞는 응답을 생성하도록 하려는 것입니다.
+```
 
 33. 에이전트 설정이 저장되었습니다. **개요** 페이지로 돌아와서 **지침**을 아래와 같이 수정합니다. 
 
