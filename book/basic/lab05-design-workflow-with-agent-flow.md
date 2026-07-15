@@ -88,6 +88,10 @@
 
    ![13. 테스트 이미지 업로드](imgs/receipt-agent/Slide13.JPG)
 
+```{note}
+여기서 올리는 샘플 이미지는 프롬프트를 설계하는 동안 결과를 미리 테스트해보기 위한 용도일 뿐입니다. 실제 실행 시에는 17단계에서 매핑하는, 사용자가 업로드한 영수증 파일이 입력으로 들어갑니다. 즉, 샘플은 개발 단계의 미리보기용이고 런타임 입력과는 별개입니다.
+```
+
 14. 프롬프트 편집 화면에서 **지시문(Instructions)** 영역에 다음 내용을 입력합니다:
    
    ```
@@ -143,9 +147,7 @@
 21. **파일 이름** 필드에서 동적 내용 버튼 **fx**을 클릭합니다. 그리고 아래의 수식을 입력한다.
    
    예를 들어, 다음과 유사한 식이 사용됩니다:
-   ```
-   concat(outputs('프롬프트_실행')?['body/responsev2/predictionOutput/structuredOutput/filename'], '.', 'jpg')
-   ```
+   `concat(outputs('프롬프트_실행')?['body/responsev2/predictionOutput/structuredOutput/filename'], '.', jpg')`
 
    ![21. 파일 이름을 동적 식으로 매핑](imgs/receipt-agent/Slide21.JPG)
 
