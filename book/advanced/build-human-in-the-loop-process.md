@@ -108,6 +108,104 @@ FlowActionTimedOut
 
 ---
 
+## 실습1: HITL 시나리오 – Human review 커넥터(비동기 승인)
+
+### 학습 목표
+
+- `Human review` 커넥터의 `Request information` 작업을 사용하여, 담당자에게 이메일로 승인 카드를 보내고 응답을 받는 비동기(Async) HITL 패턴을 이해한다.
+- `Respond to the agent` 노드를 먼저 배치하여 에이전트가 100초 응답 제한에 걸리지 않고 즉시 사용자에게 안내하도록 구성하는 방법을 익힌다.
+- 승인 결과를 후속 작업(이메일 통보)으로 연결하는 엔드-투-엔드 승인 흐름을 구현한다.
+
+### 시나리오
+
+- 법무팀 승인이 필요한 문서가 있을 때, 에이전트가 담당자에게 **검토 요청 이메일**을 보내고, 담당자는 이메일 안에서 **예/아니요**로 승인 여부를 응답한다.
+- 승인 절차는 사람이 개입해야 하므로 언제 완료될지 알 수 없다. 따라서 에이전트는 사용자를 기다리게 하지 않고 **"요청이 접수되었으며 결과는 추후 이메일로 안내된다"** 고 즉시 응답한다.
+- 담당자가 응답을 제출하면, 그 결과가 **별도 이메일로 통보**된다.
+
+> 💡 이 실습은 앞서 설명한 **비동기(Async) 방식**과 **방법 1: 자체 제공 커넥터(Human review)** 를 결합한 구현입니다. 100초 제한을 우회하는 대표적인 패턴입니다.
+
+### 지시사항
+
+1. 새 에이전트를 만들고 이름을 `HITL 커넥터 에이전트`로 설정한다. 개요 화면에서 `도구 추가`를 클릭한 뒤, `새로 만들기`에서 `에이전트 흐름`을 선택한다.
+
+![](imgs/HITL-connector/01-add-tool-new-agent-flow.png)
+
+2. `에이전트가 흐름을 호출할 때` 트리거 아래에 `Respond to the agent` 노드를 추가한다. 이 노드를 **가장 먼저** 배치하는 이유는, 승인은 사람이 개입하는 비동기 작업이라 오래 걸릴 수 있으므로 에이전트가 100초 제한에 걸리지 않고 **즉시 사용자에게 응답**하도록 하기 위함이다. 출력값에 아래와 같은 안내 메시지를 설정한다.
+
+```
+법무팀에게 문서 승인 검토가 곧 발송될 예정입니다. 법무팀의 승인 여부는 추후 이메일을 통해 안내될 예정입니다.
+```
+
+![](imgs/HITL-connector/02-respond-to-agent-immediate-message.png)
+
+3. 그 아래에 `작업 추가`를 클릭하고, `Human review` 커넥터(①)의 `Request information`(②) 작업을 추가한다.
+
+![](imgs/HITL-connector/03-add-human-review-request-information.png)
+
+4. `Request information` 작업을 아래와 같이 설정한다. 담당자에게 발송할 검토 요청 본문 내용을 구성한다. 이 때 본문에는 마크다운 문법이 적용된다. 그리고 입력값으로 예/아니요 형태의 `승인 여부`를 추가한다.
+
+- **Title**: `문서 검토 요청 드립니다.`
+- **Message**: 
+```
+안녕하세요. HITL 에이전트에서 자동 발송되었습니다.
+
+아래 문서 검토 요청드립니다. 
+
+- [Microsoft Learn](https://learn.microsoft.com/)
+
+감사합니다.
+```
+- **Assigned to (first to respond)**: 본인 이메일
+- **Channel**: `Outlook`
+- **Input**: `예/아니오` 입력 유형 선택 후 이름을 `승인 여부`로 변경
+
+![](imgs/HITL-connector/04-configure-request-information-action.png)
+
+5. `Request information` 작업 아래에 Office 365 Outlook 커넥터에서 `메일 보내기(V2)` 작업을 추가한다(①). 담당자가 응답한 결과를 전달하는 이메일을 구성한다. 본문에는 `Request information`의 출력값인 `승인 여부`(②)를 동적 콘텐츠로 삽입한다.
+
+- **받는 사람**: 본인 이메일
+- **제목**: `법무팀 승인 결과`
+- **본문**: 
+```
+법무팀 승인 결과: @{body('Request_information')?['boolean']}
+
+*본 이메일을 자동 발신되었습니다.
+```
+
+![](imgs/HITL-connector/05-add-send-email-with-approval-result.png)
+
+6. `게시`(①)를 클릭한 뒤 흐름 이름을 `법무팀 승인 요청`으로 변경한다(②). 최종 흐름은 `에이전트가 흐름을 호출할 때` → `Respond to the agent` → `Request information` → `메일 보내기(V2)` 구조가 된다.
+
+![](imgs/HITL-connector/06-rename-and-publish-flow.png)
+
+7. 에이전트로 돌아와 `도구 추가`(①)에서 방금 만든 `법무팀 승인 요청` 흐름을 도구로 추가한다(②). 그리고 지침(③)을 아래와 같이 설정한다.
+
+```
+법무팀 승인이 필요한 상황에는 /법무팀 승인 요청 을 사용한다.
+```
+
+![](imgs/HITL-connector/07-add-flow-as-tool-and-instruction.png)
+
+8. 테스트 패널에서 `법무팀 승인 요청`을 실행한다(①). 흐름 실행이 완료되면 `Respond to the agent`의 출력값(②)이 반환되고, 에이전트는 **즉시** "요청이 접수되었으며 승인 여부는 추후 이메일로 안내된다"고 응답한다. 사용자를 기다리게 하지 않는 비동기 패턴임을 확인할 수 있다.
+
+![](imgs/HITL-connector/08-test-agent-immediate-response.png)
+
+9. 본인의 Outlook 받은 편지함을 확인한다. `Request information`이 발송한 검토 요청 카드(①)가 도착해 있다. 본문에는 마크다운 문법이 적용된 것을 확인할 수 있다. `승인 여부`에서 `Yes`를 선택하고(②) `Submit`(③)을 클릭한다.
+
+![](imgs/HITL-connector/09-reviewer-email-approval-card.png)
+
+10. 담당자가 응답을 제출하면 `메일 보내기(V2)` 작업이 실행되어, `법무팀 승인 결과: Yes`(①)와 같이 승인 결과를 전달하는 이메일이 발송된 것을 확인할 수 있다.
+
+![](imgs/HITL-connector/10-approval-result-notification-email.png)
+
+### 실습 요약
+
+- `Human review` 커넥터의 `Request information` 작업으로 담당자에게 **이메일 기반 승인 요청**을 보내고 응답을 수집할 수 있다.
+- `Respond to the agent` 노드를 흐름 앞부분에 배치하면, 승인처럼 오래 걸리는 비동기 작업에서도 에이전트가 **100초 제한에 걸리지 않고 즉시 응답**한다.
+- 승인 결과는 후속 작업(예: `메일 보내기(V2)`)으로 연결하여 관계자에게 통보하는 등 엔드-투-엔드 승인 워크플로를 완성할 수 있다.
+
+---
+
 ## 실습2: HITL 시나리오 – Adaptive Card
 
 ### 학습 목표
