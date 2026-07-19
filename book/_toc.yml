@@ -52,6 +52,7 @@ parts:
           - file: advanced/build-email-agent-with-templates
           - file: advanced/generate-json-and-documents-with-prompt-tool
           - file: advanced/code-interpreter
+          - file: advanced/end-user-data-only-scenario
           - file: advanced/build-human-in-the-loop-process
           - file: advanced/agent-flow-best-practices
           - file: advanced/teams-channel-deployment-best-practices
