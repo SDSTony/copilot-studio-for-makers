@@ -18,6 +18,9 @@
 
 Power Automate에는 **Approvals(승인)** 커넥터가 내장되어 있습니다. Agent Flow 안에서 이 커넥터를 사용하면, 지정된 승인자에게 승인 요청을 보내고 응답을 기다리는 흐름을 만들 수 있습니다. 설정이 간단하고 별도 UI 개발 없이도 승인 흐름을 구현할 수 있다는 장점이 있습니다.
 
+- [표준 승인 커넥터](https://learn.microsoft.com/en-us/connectors/approvals/)
+- [고급 승인 커넥터](https://learn.microsoft.com/en-us/connectors/advancedapprovals/)
+
 ### 방법 2: Adaptive Card로 커스텀 확인 UI 구현
 
 **Adaptive Card**는 Teams나 Copilot Studio 채팅 창 안에서 버튼, 입력 폼, 이미지 등을 포함한 **인터랙티브 카드**를 표시할 수 있는 기능입니다.
@@ -105,7 +108,7 @@ FlowActionTimedOut
 
 ---
 
-## 실습: HITL 시나리오 – Adaptive Card
+## 실습2: HITL 시나리오 – Adaptive Card
 
 ### 학습 목표
 
