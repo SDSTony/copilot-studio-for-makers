@@ -47,13 +47,12 @@ parts:
           - file: advanced/best-practices-instructions-and-knowledge
           - file: advanced/advanced-topic-trigger-and-yaml-editing
           - file: advanced/odata-query-in-copilot-studio
+          - file: advanced/end-user-data-only-scenario
           - file: advanced/calling-external-api-from-topic
-          - file: advanced/handle-images-and-pdf-with-agents
-          - file: advanced/build-email-agent-with-templates
           - file: advanced/generate-json-and-documents-with-prompt-tool
           - file: advanced/code-interpreter
-          - file: advanced/end-user-data-only-scenario
+          - file: advanced/handle-images-and-pdf-with-agents
+          - file: advanced/build-email-agent-with-templates
           - file: advanced/build-human-in-the-loop-process
           - file: advanced/agent-flow-best-practices
           - file: advanced/teams-channel-deployment-best-practices
-          

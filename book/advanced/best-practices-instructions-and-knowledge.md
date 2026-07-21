@@ -329,7 +329,7 @@ Copilot Studio의 RAG는 다음 **4단계 프로세스**로 동작합니다:
 | 지식 소스 | 인증 | 주요 특성 및 제약 |
 |---|---|---|
 | **공개 웹사이트** (Bing) | 없음 | Bing 인덱싱 필요, 지역 제한 불가, 최대 2단계 서브페이지 |
-| **SharePoint / OneDrive** | Microsoft Entra ID | 위임 인증 필요, 파일 최대 15MB, 보안 트리밍 적용 |
+| **SharePoint / OneDrive** | Microsoft Entra ID | 위임 인증 필요, 보안 트리밍 적용, Enhanced Search Results (의미 체계 검색을 통한 테넌트 그래프 접지) 기능이 활성화 되어 있다면 개별 파일 사이즈 최대 200 MB (M365 Copilot 라이선스가 최소 1개라도 있다면 기본 설정) |
 | **업로드 파일** | 없음 | 파일 최대 512MB, 에이전트당 최대 500개, PDF 이미지/표 인식 지원 |
 | **Dataverse 테이블** | Microsoft Entra ID | 최대 15개 테이블, 동의어/용어집으로 검색 개선 가능 |
 | **Graph 커넥터** | Microsoft Entra ID | ServiceNow, Confluence 등 Enterprise 앱 연동 |
