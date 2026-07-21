@@ -47,7 +47,7 @@
 | 14:45 – 15:15 | **프롬프트 도구(JSON & 문서) / 코드 인터프리터** | JSON·Word 문서 출력, 수료증 생성, Python 코드 실행 기반 데이터 분석 |
 | 15:15 – 16:00 | **이미지 & PDF 처리 / 이메일 템플릿 에이전트 / HITL 프로세스** | 파일 전달 JSON 구조, 이력서 분석, Outlook HTML 활용 이메일 에이전트, 동기 및 비동기 승인 흐름 |
 | 16:00 – 16:15 | *휴식 (15분)* | |
-| 16:15 – 17:00 | **Agent Flow 주의 사항 / Teams 배포 / New Copilot Studio (preview)** | Agent Flow 주의 사항, Teams 배포 모범 사례, New Copilot Studio (preview) |
+| 16:15 – 17:00 | **Agent Flow 주의 사항 / Teams 배포** | Agent Flow 주의 사항, Teams 배포 모범 사례|
 
 ---
 
