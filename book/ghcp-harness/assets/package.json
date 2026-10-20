@@ -1,0 +1,13 @@
+{
+  "name": "ghcp-travel-lab-assets",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "documents": "node generate-documents.cjs",
+    "presentation": "node generate-presentation.cjs"
+  },
+  "dependencies": {
+    "docx": "9.9.0",
+    "pptxgenjs": "4.0.1"
+  }
+}

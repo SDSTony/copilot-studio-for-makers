@@ -56,3 +56,18 @@ parts:
           - file: advanced/build-human-in-the-loop-process
           - file: advanced/agent-flow-best-practices
           - file: advanced/teams-channel-deployment-best-practices
+
+  - caption: GHCP 하네스 과정
+    chapters:
+      - file: ghcp-harness/course-overview
+      - file: ghcp-harness/module01-copilot-studio-and-ghcp-harness
+      - file: ghcp-harness/lab02-create-solution
+      - file: ghcp-harness/lab02-create-agent-and-instructions
+      - file: ghcp-harness/lab03-onedrive-knowledge
+      - file: ghcp-harness/lab04a-instruction-skill
+      - file: ghcp-harness/lab04b-file-based-skill
+      - file: ghcp-harness/lab05-query-trip-plans
+      - file: ghcp-harness/lab06-register-trip-with-workflow
+      - file: ghcp-harness/lab08-evaluate-and-improve
+      - file: ghcp-harness/lab09-publish-and-monitor
+      - file: ghcp-harness/lab10-summarize-uploaded-file
