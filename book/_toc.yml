@@ -61,13 +61,13 @@ parts:
     chapters:
       - file: ghcp-harness/course-overview
       - file: ghcp-harness/module01-copilot-studio-and-ghcp-harness
-      - file: ghcp-harness/lab02-create-solution
-      - file: ghcp-harness/lab02-create-agent-and-instructions
-      - file: ghcp-harness/lab03-onedrive-knowledge
-      - file: ghcp-harness/lab04a-instruction-skill
-      - file: ghcp-harness/lab04b-file-based-skill
-      - file: ghcp-harness/lab05-query-trip-plans
-      - file: ghcp-harness/lab06-register-trip-with-workflow
-      - file: ghcp-harness/lab08-evaluate-and-improve
-      - file: ghcp-harness/lab09-publish-and-monitor
-      - file: ghcp-harness/lab10-summarize-uploaded-file
+      - file: ghcp-harness/module02-create-solution
+      - file: ghcp-harness/module03-create-agent-and-instructions
+      - file: ghcp-harness/module04-onedrive-knowledge
+      - file: ghcp-harness/module05-1-instruction-skill
+      - file: ghcp-harness/module05-2-file-based-skill
+      - file: ghcp-harness/module06-query-trip-plans
+      - file: ghcp-harness/module07-register-trip-with-workflow
+      - file: ghcp-harness/module08-evaluate-and-improve
+      - file: ghcp-harness/module09-publish-and-monitor
+      - file: ghcp-harness/module10-summarize-uploaded-file

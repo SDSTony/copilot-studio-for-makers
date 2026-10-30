@@ -48,4 +48,4 @@ node .\book\ghcp-harness\assets\generate-recording-titles.cjs
 
 검증 도구는 문서와 ZIP 구조, 원본·패키지 일치, Excel 스키마·샘플 수치, PPTX의 3장 구성·플레이스홀더·외부 리소스 부재를 검사합니다. 템플릿의 플레이스홀더는 의도된 입력 영역입니다. 생성 결과에는 플레이스홀더가 남으면 안 됩니다.
 
-평가는 모듈 8의 질문·기대응답 2개를 Evaluate 화면에 직접 입력합니다. 별도 평가 파일은 제공하지 않습니다. 모듈 10은 기존 `domestic-travel-policy.docx`를 PC에 내려받아 별도 incoming 폴더에 새로 업로드하여 테스트합니다. PowerPoint에서 템플릿과 채워진 파일을 열어 디자인과 글자 넘침도 확인합니다. 실제 Copilot Studio 환경의 Skill 편집 결과, Work IQ MCP 인증·메일 조회, 생성 PPT의 Workflow 바이너리 전달, 이메일 첨부·OneDrive 저장 결과, Evaluate, 게시·Monitor, 파일 생성 감지·Agent의 Word 요약·메일 발송은 강사의 사전 리허설과 완료 체크리스트로 별도 검증해야 합니다. 생성 파일명이나 URL만으로 실제 파일 전달이 가능하다고 가정하지 않습니다.
+평가는 모듈 8의 질문 2개를 평가 화면에 직접 입력합니다. 별도 평가 파일은 제공하지 않습니다. 모듈 10은 기존 `domestic-travel-policy.docx`를 PC에 내려받아 OneDrive의 `GHCP-Workflow-Lab` 폴더에 새로 업로드하여 테스트합니다. PowerPoint에서 템플릿과 채워진 파일을 열어 디자인과 글자 넘침도 확인합니다. 실제 Copilot Studio 환경의 Skill 편집 결과, Work IQ MCP 인증·메일 조회, 생성 PPT의 Workflow 바이너리 전달, 이메일 첨부·OneDrive 저장 결과, Evaluate, 게시·Monitor, 파일 생성 감지·Word 내용 추출·에이전트 요약·Teams 메시지 게시는 강사의 사전 리허설과 완료 체크리스트로 별도 검증해야 합니다. 생성 파일명이나 URL만으로 실제 파일 전달이 가능하다고 가정하지 않습니다.
