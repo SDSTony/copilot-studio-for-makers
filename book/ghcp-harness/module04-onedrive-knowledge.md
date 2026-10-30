@@ -110,7 +110,7 @@
 
 ## 참고 자료
 
-- [GHCP 에이전트의 지식 소스 연결](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/knowledge-add-existing-copilot)
-- [OneDrive 파일과 폴더 연결의 공통 설명](https://learn.microsoft.com/microsoft-copilot-studio/knowledge-add-unstructured-data#add-onedrive-files-and-folders) — Standard 화면 설명과 GHCP 화면의 메뉴 차이에 유의하세요.
+- [Microsoft Copilot 하네스 에이전트의 지식 소스 연결](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/knowledge-add-existing-copilot)
+- [OneDrive 파일과 폴더 연결의 공통 설명](https://learn.microsoft.com/microsoft-copilot-studio/knowledge-add-unstructured-data#add-onedrive-files-and-folders) — Standard 화면 설명과 Microsoft Copilot 하네스 화면의 메뉴 차이에 유의하세요.
 
 [이전: 첫 에이전트와 Instructions](module03-create-agent-and-instructions.md) · [다음: 사전 검토 Skill](module05-1-instruction-skill.md)

@@ -167,7 +167,7 @@ Workflow가 아직 없으므로 **PPT는 생성하되 발송·저장 도구 연�
 
 ## 참고 자료
 
-- [GHCP Workflow 개요](https://learn.microsoft.com/microsoft-copilot-studio/workflows-experience/flows-overview)
+- [Microsoft Copilot 하네스 Workflow 개요](https://learn.microsoft.com/microsoft-copilot-studio/workflows-experience/flows-overview)
 - [에이전트에 Tool 추가](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/add-tools-custom-agent)
 - [Office 365 Outlook 커넥터](https://learn.microsoft.com/connectors/office365/)
 - [OneDrive for Business 커넥터](https://learn.microsoft.com/connectors/onedriveforbusiness/)

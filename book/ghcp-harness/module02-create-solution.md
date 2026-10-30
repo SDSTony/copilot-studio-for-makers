@@ -79,4 +79,4 @@
 - [Power Apps에서 솔루션 만들기](https://learn.microsoft.com/power-apps/maker/data-platform/create-solution)
 - [Copilot Studio의 솔루션 관리: Standard 하네스 대상 안내](https://learn.microsoft.com/microsoft-copilot-studio/authoring-solutions-overview)
 
-[이전: Copilot Studio와 GHCP 하네스](module01-copilot-studio-and-ghcp-harness.md) · [다음: 첫 에이전트와 Instructions](module03-create-agent-and-instructions.md)
+[이전: Copilot Studio와 Microsoft Copilot 하네스](module01-copilot-studio-and-ghcp-harness.md) · [다음: 첫 에이전트와 Instructions](module03-create-agent-and-instructions.md)

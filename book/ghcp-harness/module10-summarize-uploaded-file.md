@@ -111,7 +111,7 @@
 
 ## 참고 자료
 
-- [GHCP Workflow 개요](https://learn.microsoft.com/microsoft-copilot-studio/workflows-experience/flows-overview)
+- [Microsoft Copilot 하네스 Workflow 개요](https://learn.microsoft.com/microsoft-copilot-studio/workflows-experience/flows-overview)
 - [Workflow의 Agent 노드](https://learn.microsoft.com/microsoft-copilot-studio/workflows-experience/agent-node-workflow)
 - [Workflow 테스트와 게시](https://learn.microsoft.com/microsoft-copilot-studio/workflows-experience/flow-designer)
 - [OneDrive for Business의 파일 생성 트리거](https://learn.microsoft.com/connectors/onedriveforbusiness/#when-a-file-is-created)

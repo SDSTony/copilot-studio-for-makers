@@ -57,7 +57,7 @@ parts:
           - file: advanced/agent-flow-best-practices
           - file: advanced/teams-channel-deployment-best-practices
 
-  - caption: GHCP 하네스 과정
+  - caption: Microsoft Copilot 하네스 과정
     chapters:
       - file: ghcp-harness/course-overview
       - file: ghcp-harness/module01-copilot-studio-and-ghcp-harness

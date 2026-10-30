@@ -2,7 +2,7 @@
 
 ## 학습 목표
 
-- GHCP 하네스 에이전트 **출장 준비 도우미**를 만듭니다.
+- Microsoft Copilot 하네스 에이전트 **출장 준비 도우미**를 만듭니다.
 - 생성 전에 저장할 실습용 솔루션과 에이전트 언어를 확인하고 변경합니다.
 - Instructions로 역할, 지원 범위, 확인 및 실패 처리 원칙을 정의합니다.
 - Instructions가 비어 있을 때와 작성한 뒤의 Preview 응답을 같은 질문으로 비교합니다.
@@ -12,10 +12,10 @@
 - [모듈 2](module02-create-solution.md)에서 만든 실습용 솔루션
 - 필요한 커넥터와 Knowledge 사용을 허용하는 데이터 정책 및 Copilot Credits
 
-## 1. GHCP 하네스 에이전트 생성
+## 1. Microsoft Copilot 하네스 에이전트 생성
 
 1. [Copilot Studio](https://copilotstudio.microsoft.com/)에 본인 계정으로 로그인합니다.
-2. 홈에서 GHCP 하네스 기반 **에이전트 만들기** 경로를 선택합니다. Standard 하네스용 **Other ways to build** 경로를 선택하지 않습니다.
+2. 홈에서 Microsoft Copilot 하네스 기반 **에이전트 만들기** 경로를 선택합니다. Standard 하네스용 **Other ways to build** 경로를 선택하지 않습니다.
 3. **만들기(Create)**를 확정하기 전에 아래의 **저장할 솔루션과 언어 설정**을 진행합니다. 생성 화면에 추가 설정이 접혀 있으면 펼쳐서 확인합니다.
 
 ### 1-1. 저장할 솔루션과 언어 변경
@@ -125,7 +125,7 @@ Instructions는 행동을 유도하는 지침이지 접근 제어 장치가 아�
 
 ## 완료 체크리스트
 
-- [ ] 본인의 실습용 솔루션과 한국어를 선택하여 GHCP 하네스 에이전트를 만들었습니다.
+- [ ] 본인의 실습용 솔루션과 한국어를 선택하여 Microsoft Copilot 하네스 에이전트를 만들었습니다.
 - [ ] Instructions가 비어 있는 상태에서 A·B·C를 각각 새 대화로 시험했습니다.
 - [ ] Instructions를 직접 읽고 역할·근거·입력 확인·실행 경계를 설명할 수 있습니다.
 - [ ] Instructions 저장 후 같은 세 프롬프트를 각각 새 대화로 재시험하고 응답 차이를 비교했습니다.

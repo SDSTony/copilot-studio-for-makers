@@ -100,6 +100,6 @@ Skill 추가 전 결과와 비교하여, 이번에는 **등록된 템플릿의 3
 
 - [Skill 파일·ZIP 업로드](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/skills-add-existing)
 - [에이전트 생성 파일](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/created-files-overview)
-- [GHCP 대화에 파일 첨부](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/attachments-overview)
+- [Microsoft Copilot 하네스 대화에 파일 첨부](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/attachments-overview)
 
 [이전: 사전 검토 Skill](module05-1-instruction-skill.md) · [다음: Excel 행 추가와 Outlook 관련 MCP](module06-query-trip-plans.md)

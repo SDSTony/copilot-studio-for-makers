@@ -1,15 +1,23 @@
 # 과정 안내
 
-**GHCP 하네스 과정**은 GitHub Copilot(GHCP) 하네스 기반의 Copilot Studio 에이전트를 구축하는 방법을 다루는 튜토리얼입니다.
+**Microsoft Copilot 하네스 과정**은 Microsoft Copilot 하네스 기반의 Copilot Studio 에이전트를 구축하는 방법을 다루는 튜토리얼입니다.
+
+```{note}
+**하네스 명칭 변경 안내 — 2026년 10월 28일 발표**
+
+Microsoft는 [공식 블로그](https://www.microsoft.com/en-us/copilot/blog/copilot-studio/the-github-copilot-harness-in-copilot-studio-is-now-the-microsoft-copilot-harness/)에서 기존 **GitHub Copilot(GHCP) 하네스**의 이름을 **Microsoft Copilot 하네스**로 변경한다고 발표했습니다. 기존 에이전트의 기능과 과금에는 변경이 없으며, 제품 화면의 용어는 발표 이후 수 주에 걸쳐 순차적으로 반영됩니다.
+
+이 책은 새 명칭을 사용합니다. 다만 녹화 영상과 실습 환경의 일관성을 위해 `ghcp-harness` 경로, `GHCP-Travel-Lab`·`GHCP-Workflow-Lab` 폴더, 솔루션 이름과 메일 제목 등 실습 식별자는 그대로 유지합니다. 녹화 영상·기존 화면·다운로드 자료에 나오는 GHCP 하네스는 같은 Microsoft Copilot 하네스를 가리킵니다.
+```
 
 ---
 
 ## 교육 대상자
 
 - Copilot Studio를 완전히 처음 접하는 분
-- Standard 하네스를 사용하다가 GHCP 하네스를 사용해 보고자 하는 분
+- Standard 하네스를 사용하다가 Microsoft Copilot 하네스를 사용해 보고자 하는 분
 
-Copilot Studio 사전 사용 경험 없이도 참여할 수 있으며, Standard 하네스 사용 경험이 있는 분도 GHCP 하네스를 활용한 에이전트 구축 방법을 학습할 수 있습니다.
+Copilot Studio 사전 사용 경험 없이도 참여할 수 있으며, Standard 하네스 사용 경험이 있는 분도 Microsoft Copilot 하네스를 활용한 에이전트 구축 방법을 학습할 수 있습니다.
 
 ---
 
@@ -17,9 +25,9 @@ Copilot Studio 사전 사용 경험 없이도 참여할 수 있으며, Standard 
 
 이 과정에서는 다음 내용을 학습하는 것을 목표로 합니다.
 
-- GHCP 하네스 에이전트의 개념과 활용 시나리오 이해
+- Microsoft Copilot 하네스 에이전트의 개념과 활용 시나리오 이해
 - 에이전트 구축에 필요한 개발 환경과 작업 흐름 준비
-- Instructions, Knowledge, Skills, Tools, Workflow를 활용한 GHCP 하네스 에이전트 설계 및 구현
+- Instructions, Knowledge, Skills, Tools, Workflow를 활용한 Microsoft Copilot 하네스 에이전트 설계 및 구현
 - 구축한 에이전트의 동작 검증과 개선
 
 ---
@@ -48,7 +56,7 @@ Copilot Studio 사전 사용 경험 없이도 참여할 수 있으며, Standard 
 
 | 모듈 | 주제 | 주요 내용 |
 |---|---|---|
-| 1 | [Copilot Studio 소개와 GHCP 하네스 에이전트 소개](module01-copilot-studio-and-ghcp-harness.md) | 하네스 개념, Standard와의 차이, 구성 요소와 Build·Preview·Evaluate·Monitor 소개 |
+| 1 | [Copilot Studio 소개와 Microsoft Copilot 하네스 에이전트 소개](module01-copilot-studio-and-ghcp-harness.md) | 하네스 개념, Standard와의 차이, 구성 요소와 Build·Preview·Evaluate·Monitor 소개 |
 | 2 | [실습용 솔루션 만들기와 초기 설정](module02-create-solution.md) | 회사 정책에 따른 환경 선택, 개인별 비관리형 솔루션·새 게시자 생성 |
 | 3 | [첫 에이전트 만들기와 Instructions 작성](module03-create-agent-and-instructions.md) | 솔루션·언어 설정, 에이전트 생성, Instructions 작성 전·후 Preview 비교 |
 | 4 | [OneDrive의 문서를 Knowledge로 연결하기](module04-onedrive-knowledge.md) | OneDrive 폴더 준비, 지식 연결 전·후 같은 질문으로 답변·문서 근거 비교 |
@@ -77,5 +85,5 @@ Copilot Studio 사전 사용 경험 없이도 참여할 수 있으며, Standard 
 
 ## 참고 자료
 
-- [GHCP 하네스 에이전트의 지식 소스 연결](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/knowledge-add-existing-copilot)
+- [Microsoft Copilot 하네스 에이전트의 지식 소스 연결](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/knowledge-add-existing-copilot)
 - [Excel Online (Business) 커넥터](https://learn.microsoft.com/en-us/connectors/excelonlinebusiness/)

@@ -120,7 +120,7 @@ Activity trace에서 Skill 활성화와 지식 활용 정보를 확인합니다.
 
 ## 참고 자료
 
-- [GHCP Skill 개요](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/skills-overview)
+- [Microsoft Copilot 하네스 Skill 개요](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/skills-overview)
 - [Skill 만들기](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/skills-create)
 
 [이전: OneDrive Knowledge](module04-onedrive-knowledge.md) · [다음: 파일 기반 Skill](module05-2-file-based-skill.md)

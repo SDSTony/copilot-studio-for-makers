@@ -173,7 +173,7 @@ Tool이 추가되었다는 이유만으로 모든 답변이 달라질 필요는 
 
 ## 참고 자료
 
-- [GHCP Tool 추가](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/add-tools-custom-agent)
+- [Microsoft Copilot 하네스 Tool 추가](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/add-tools-custom-agent)
 - [Excel Online (Business)](https://learn.microsoft.com/connectors/excelonlinebusiness/)
 - [에이전트에 MCP 서버 연결](https://learn.microsoft.com/microsoft-copilot-studio/agent-extend-action-mcp)
 

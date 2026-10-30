@@ -66,7 +66,7 @@ Preview에서 질문을 하나씩 보내는 대신, **여러 테스트 케이스
 
 ## 참고 자료
 
-- [GHCP 평가 테스트 세트 만들기](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/analytics-agent-evaluation-create)
+- [Microsoft Copilot 하네스 평가 테스트 세트 만들기](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/analytics-agent-evaluation-create)
 - [평가 실행과 재실행](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/analytics-agent-evaluation-results)
 - [평가 결과 확인](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/analytics-agent-evaluation-view)
 

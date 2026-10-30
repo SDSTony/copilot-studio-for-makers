@@ -1,22 +1,22 @@
-# 모듈 1. Copilot Studio와 GHCP 하네스 에이전트 소개
+# 모듈 1. Copilot Studio와 Microsoft Copilot 하네스 에이전트 소개
 
 ## 학습 목표
 
 - Copilot Studio에서 에이전트와 Workflow가 맡는 역할을 구분합니다.
-- Standard 하네스와 GHCP 하네스의 작성 방식 차이를 이해합니다.
+- Standard 하네스와 Microsoft Copilot 하네스의 작성 방식 차이를 이해합니다.
 - 이번 과정의 에이전트 구성과 개인별 데이터 흐름을 이해합니다.
 
 ```{warning}
-GHCP 하네스 관련 기능은 환경과 릴리스 시점에 따라 화면이나 제공 범위가 다를 수 있습니다. 이 과정은 GHCP 하네스 화면을 기준으로 하며, 기존 기본 과정의 Classic UI 전환 안내를 적용하지 않습니다.
+Microsoft Copilot 하네스 관련 기능은 환경과 릴리스 시점에 따라 화면이나 제공 범위가 다를 수 있습니다. 이 과정은 Microsoft Copilot 하네스 화면을 기준으로 하며, 기존 기본 과정의 Classic UI 전환 안내를 적용하지 않습니다.
 ```
 
 ## 1. Copilot Studio와 하네스 이해하기
 
 Copilot Studio는 지식에 답변하고 도구를 사용하여 업무를 수행하는 에이전트와, 정해진 순서로 작업을 자동화하는 Workflow를 만드는 서비스입니다. 더 나아가 자연어 명령으로 전통적인 어플리케이션 구축까지 가능합니다.
 
-**하네스(Harness)** 는 요청을 해석하고 에이전트의 구성 요소를 사용하여 작업을 수행하는 기반입니다. GHCP는 GitHub Copilot의 약칭이지만, 이 과정은 VS Code의 GitHub Copilot 이라는 인공지능 비서를 사용하는 개발 과정이 아닙니다. 본 과정에서는 Copilot Studio 안의 **GitHub Copilot 하네스** 구조를 사용하여 에이전트를 구축하는 과정을 살펴봅니다.
+**하네스(Harness)** 는 요청을 해석하고 에이전트의 구성 요소를 사용하여 작업을 수행하는 기반입니다. 이 과정은 VS Code의 GitHub Copilot이라는 인공지능 비서를 사용하는 개발 과정이 아닙니다. 본 과정에서는 Copilot Studio 안의 **Microsoft Copilot 하네스** 구조를 사용하여 에이전트를 구축하는 과정을 살펴봅니다.
 
-| 구분 | Standard 하네스 | GHCP 하네스 |
+| 구분 | Standard 하네스 | Microsoft Copilot 하네스 |
 |---|---|---|
 | 작성 방식 | 토픽, 트리거, 명시적인 대화 흐름과 Instructions를 활용 | Instructions와 Skills를 중심으로 요청 해석과 다단계 작업을 구성 |
 | 절차 표현 | 토픽의 질문·조건·작업 노드 등 | 요청별 Skill과 Tool 선택, 필요한 경우 결정적인 Workflow 호출 |
@@ -24,9 +24,9 @@ Copilot Studio는 지식에 답변하고 도구를 사용하여 업무를 수행
 
 Standard 하네스도 생성형 기능을 지원하므로 단순히 "규칙 기반 대 AI 기반"으로 두 하네스를 구분하기는 어렵습니다.
 
-성능 측면에서는 아래 Microsoft 공개 벤치마크에서 GHCP 하네스가 Standard 하네스보다 다중 도구 사용(98.9% 대 87.0%), 파일 분석(91.7% 대 63.5%), 코드 분석(88.1% 대 40.6%), 지식 활용(86.4% 대 66.0%)에서 높은 결과를 보였습니다. 이는 해당 벤치마크의 비교 결과이며, 실제 업무에서의 성능은 모델과 에이전트 구성, 데이터 및 작업에 따라 달라질 수 있습니다.
+성능 측면에서는 아래 Microsoft 공개 벤치마크에서 Microsoft Copilot 하네스가 Standard 하네스보다 다중 도구 사용(98.9% 대 87.0%), 파일 분석(91.7% 대 63.5%), 코드 분석(88.1% 대 40.6%), 지식 활용(86.4% 대 66.0%)에서 높은 결과를 보였습니다. 이는 해당 벤치마크의 비교 결과이며, 실제 업무에서의 성능은 모델과 에이전트 구성, 데이터 및 작업에 따라 달라질 수 있습니다.
 
-![GHCP 하네스와 Standard 하네스의 다중 도구 사용, 파일 분석, 코드 분석, 지식 활용 벤치마크 비교](imgs/harness-performance-comparison.png)
+![Microsoft Copilot 하네스와 Standard 하네스의 다중 도구 사용, 파일 분석, 코드 분석, 지식 활용 벤치마크 비교](imgs/harness-performance-comparison.png)
 
 출처: [More powerful agents and workflows for autonomous business processes: Introducing a new harness for Copilot Studio | Microsoft Community Hub](https://techcommunity.microsoft.com/blog/copilot-studio-blog/more-powerful-agents-and-workflows-for-autonomous-business-processes-introducing/4542969)
 
@@ -55,13 +55,13 @@ Knowledge는 **규정의 근거**, Excel은 **현재 기록**, Skill은 **수행
 ## 완료 체크리스트
 
 - [ ] Copilot Studio를 이해합니다.
-- [ ] 에이전트 유형인 Standard 하네스와 GHCP 하네스의 차이점을 이해합니다.
+- [ ] 에이전트 유형인 Standard 하네스와 Microsoft Copilot 하네스의 차이점을 이해합니다.
 - [ ] Build → Preview → Evaluate → 게시 → Monitor 흐름을 이해합니다.
 
 ## 참고 자료
 
-- [GHCP 하네스 에이전트 개요](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/overview)
+- [Microsoft Copilot 하네스 에이전트 개요](https://learn.microsoft.com/microsoft-copilot-studio/agents-experience/overview)
 - [Copilot Studio의 하네스](https://learn.microsoft.com/microsoft-copilot-studio/harnesses-overview)
-- [GHCP Workflow 개요](https://learn.microsoft.com/microsoft-copilot-studio/workflows-experience/flows-overview)
+- [Microsoft Copilot 하네스 Workflow 개요](https://learn.microsoft.com/microsoft-copilot-studio/workflows-experience/flows-overview)
 
 [이전: 과정 안내](course-overview.md) · [다음: 실습용 솔루션 만들기](module02-create-solution.md)
